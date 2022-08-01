@@ -9,8 +9,11 @@ function returnFortune(string){
 }
 
 function randomFirstWord(){
-
-}
+    let firstWord = [`You`, `Your friends`,`Your pet`, `Your plants`]
+    let randomNumber = Math.floor(Math.random()*firstWord.length)
+    return firstWord[randomNumber]
+    }
+    
 
 //assign a number to a word then do the math floor random thing, then another function if the number = that then it returns the word
 //random word 1, random word 2, random word 3, each one uses the math random floor and generates a number between 1-3, one of the 
